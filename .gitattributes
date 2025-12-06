@@ -1,0 +1,13 @@
+# Exclude Nix files from GitHub language statistics
+# These are development environment files, not project source code
+flake.nix linguist-vendored
+flake.lock linguist-generated
+
+# Lock files are generated
+deno.lock linguist-generated
+*.lock linguist-generated
+
+# Ensure correct language detection for source files
+*.ts linguist-detectable
+*.html linguist-detectable
+*.css linguist-detectable
